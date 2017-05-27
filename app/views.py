@@ -6,7 +6,7 @@ This file creates your application.
 """
 
 from app import app
-from flask import render_template, request, redirect, url_for, flash
+from flask import render_template, request, redirect, url_for, flash, send_file
 import json
 import hashlib
 import base64
@@ -29,6 +29,13 @@ def about():
 def get_img(img):
 	return app.send_static_file(filename="img/%s"%(img))
 
+@app.route('/download/')
+def download():
+    return render_template('download.html')
+
+@app.route('/download/<file>')
+def get_file(file):
+    return send_file("static/files/%s"%(file), as_attachment=True)
 ###
 # The functions below should be applicable to all Flask apps.
 ###

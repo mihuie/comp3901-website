@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block main %}
+
+
+<div class="container container-app container-block">
+	<div class="block-header largeheading">Downloads</div>
+</div>
+
+<div class="container container-block downloads">
+
+	<div class="col-md-3">
+		<h2>Java Calculus</h2>
+	</div>
+	<div class="col-md-3">
+		<h2>Android app</h2>
+		<a href="{{ url_for('get_file', file='java_calculus.apk') }}">Java_Calculus.apk</a>
+	</div>
+	<div class="col-md-3">
+		<h2>Source Code</h2>
+		<a href="{{ url_for('get_file', file='CalculusCal-0.2.zip') }}">CalculusCal-0.2.zip</a>
+	</div>
+	<div class="col-md-3">
+		<h2>Documentation</h2>
+		<a href="{{ url_for('get_file', file='Documentation.txt') }}">Documentation.txt</a>
+	</div>
+
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}

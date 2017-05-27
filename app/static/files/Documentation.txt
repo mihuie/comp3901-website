@@ -1,0 +1,49 @@
+The is a short document that outlines the functionality of Java Calculus.
+
+Keys 
+
+* Plot, Contin, Taylor, and Root keys require an expression to be entered prior to pressing any of these buttons.
+* Evaluate key the expression entered
+* SP key is used to escape subscript or superscript operations. For example after entering 'lim' the app automatically goes into subscript mode to allow you to enter scope (such as x -> 0). To exit subscript mode enter SP.
+
+
+Below are examples of expression that can be evalutated in script mode. These examples along with screenshots provided on homepage may be used as guide to use application.
+
+
+
+println(6 + 6);
+PI * PI;
+COS(3 * PI / 2);
+LN(3);
+LN(f(3));
+
+//factorial demonstration
+4!;
+
+//plot
+plot 23 * x ^ 2 + 6 * x ^ 3 for x in [3 : 6];
+
+
+//limit demonstration
+limit( x ^ 3 as x -> 0);
+limit( (x ^ 3) / SIN(x) as x -> 0);
+limit(  SIN(x) / x as x -> 0);
+
+
+//root withing range demonstration 
+root(  x ^ 2 - x for x in [ 1 : 5 ]);
+
+//Demonstrates differentiation
+DIFF( x ^ 2 /2: x);
+DIFF(SEC(x): x , 2);
+
+//Integration
+INT(x ^ 2: x );
+
+//Taylor series demonstration
+TAYLOR(SIN(x): x , 3 , 2);
+
+//continuity at a point
+CONT( x ^ 2 as x -> 0);
+CONT( (x ^ 2) / x as x -> 0);
+CONT( if x < 2 then x ^ 2 else  if x >= 2 then x ^ 3 as x -> 2);

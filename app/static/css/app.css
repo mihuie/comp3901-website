@@ -76,6 +76,10 @@ body {
 
 }
 
+.downloads{
+	padding-bottom: 80px;
+}
+
 .feature-container {
 	margin: 18px auto;
 	padding: 8px;
@@ -140,6 +144,14 @@ body {
 .footer label {
 	display: block;
 	margin: 0;
+}
+
+.largeheading {
+	text-align: left;
+	padding-top: 100px;
+	padding-bottom: 100px;
+    color: #000;
+    font-size: 4em;
 }
 
 .navbar-app {
