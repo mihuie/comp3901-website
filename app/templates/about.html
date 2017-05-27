@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block main %}
+
+<div id="about-top-banner" class="banner-wrap">
+	<div class="banner-container">
+	</div>
+</div>
+
+<div class="container container-app container-block">
+
+	<h1 class="block-header">About this Product</h1>
+
+	<h3>C O M P 3 9 0 1 &nbsp; - &nbsp; G R O U P &nbsp; P R O J E C T</h3>
+
+	<p>{{ appname }} solves basic mathematics operations in addition to varying degrees of calculus problems. {{ appname }} uses a custom built parser to resolve all problems. This project was completed as a fulfilment of course COMP3901 at the University of West Indies, Mona.</p>
+</div>
+
+<div class="container container-block">
+	<h3>T H E &nbsp; T E A M</h3>
+
+	<div class="about-container col-md-4">
+		<div class="profile-image-crop">
+			<img class="profile-image" src="/img/profile_default.png"/>
+		</div>
+			<label>Andre Boothe</label>
+			<p></p>
+	</div>
+
+	<div class="about-container col-md-4">
+		<div class="profile-image-crop">
+			<img class="profile-image" src="/img/profile_default.png"/>
+		</div>
+			<label>Orren Joseph</label>
+			<p></p>
+	</div>
+
+	<div class="about-container col-md-4">
+		<div class="profile-image-crop">
+			<img class="profile-image" src="/img/profile_default.png"/>
+		</div>
+			<label>Michael Huie</label>
+			<p></p>
+	</div>
+</div>
+
+<div class="container container-app container-block">
+	<h3>T H E &nbsp; U N I V E R S I T Y &nbsp; O F &nbsp; T H E &nbsp; W E S T &nbsp; I N D I E S</h3>
+</div>
+
+<div id="map" class="banner-wrap">
+	map goes here
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBToMqL2BxHGxcqgSA2V9yagb402ygPkH4&callback=initMap">
+</script>
+{% endblock %}
